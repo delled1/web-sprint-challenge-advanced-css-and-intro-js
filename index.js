@@ -256,14 +256,19 @@ console.log(getArtistByIndex(artists, 0));
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
+/* This was the only way I found to target the first year and second year separately in the string. */
+
 function get20s(arr) {
-  let artistsArray = [];
+  let artists20sArray = [];
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i].years[1] >= 9 && arr[i].years[7] < 2) {
-      artistsArray.push(arr[i].name);
+    if (
+      arr[i].years.substring(0, 4) >= 1900 &&
+      arr[i].years.substring(8, 12) <= 2000
+    ) {
+      artists20sArray.push(arr[i].name);
     }
   }
-  return artistsArray;
+  return artists20sArray;
 }
 
 console.log(get20s(artists));
