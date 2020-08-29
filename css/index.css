@@ -217,6 +217,15 @@ button:hover {
     font-weight: bolder;
   }
 
+  .title-container div {
+    width: 100%;
+  }
+
+  .title-container hr {
+    margin: 0;
+    width: 100%;
+  }
+
   .artists-container {
     display: flex;
     flex-flow: column;
@@ -228,6 +237,11 @@ button:hover {
     width: 80%;
     margin-bottom: 5%;
     font-size: 1rem;
+  }
+
+  .artists-container div a {
+    font-size: 2rem;
+    font-weight: lighter;
   }
 
   .artist img {
