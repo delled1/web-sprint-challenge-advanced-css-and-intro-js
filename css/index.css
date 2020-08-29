@@ -231,11 +231,12 @@ button:hover {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    margin-top: 5%;
   }
 
   .artist {
     width: 80%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     font-size: 1rem;
   }
 
